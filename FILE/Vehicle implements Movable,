@@ -1,0 +1,11 @@
+interface Engine {
+void start();
+}
+class Vehicle implements Movable, Engine {
+public void move() {
+System.out.println("Vehicle moves");
+}
+public void start() {
+System.out.println("Engine starts");
+}
+}
