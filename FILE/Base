@@ -1,0 +1,20 @@
+class Base {
+void display() {
+System.out.println("Base class method");
+}
+}
+interface A {
+void methodA();
+}
+interface B {
+void methodB();
+}
+
+class Derived extends Base implements A, B {
+public void methodA() {
+System.out.println("A interface method");
+}
+public void methodB() {
+System.out.println("B interface method");
+}
+}
